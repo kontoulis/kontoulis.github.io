@@ -68,7 +68,7 @@
 
 </nav>
 
-<div class="container is-fluid" style="margin-top:10px;">
+<div class="container is-fluid" id="main-container" style="margin-top:10px;">
     <div class="columns">
         <div class="column is-one-quarter ">
             <div class="tile is-ancestor ">
@@ -127,6 +127,13 @@
         </div>
 
             <div class="column is-6">
+                <div class="tile is-vertical ">
+                    <article class="tile is-child notification is-light content">
+                        <h1 id="about">About me</h1>
+                        Motivated with an innovative mind, with years of experience working as a programmer
+                        in fast growing companies, always a crucial member of the team, that has a word for the architecture of the project,
+                        and a track record of incorporating complex requirements into best solutions.
+                    </article>
                 <div class="tile is-vertical ">
                     <article class="tile is-child notification is-light content">
                         <h1 id="skills">Skills</h1>
@@ -199,8 +206,8 @@
                         <h1 class="title" id="experience">Work experience</h1>
                         <hr/>
                         <h3>Senior Programmer</h3>
-                        <p class="content is-small">Turbado GMBH (Feb 2016 - )</p>
-                        <p class="is-text">R&D</p>
+                        <p class="content is-small">Turbado GMBH (Feb 2016 - today) <small>remote</small></p>
+                        <p class="is-text">R&D </p>
 
                         <h3>Software Engineer</h3>
                         <p class="content is-small">ClickMedia Greece(Jul 2014 - Nov 2015)</p>
@@ -218,6 +225,7 @@
                             <li>Git</li>
                             <li>Ubuntu</li>
                             <li>Trello</li>
+                            <li>Slack</li>
                             <li>Jira</li>
                         </ul>
 
@@ -225,8 +233,7 @@
                     <article class="tile is-child notification is-light content">
                         <h1 class="title" id="education">Education</h1>
                         <hr />
-                        <p class="content is-small">Bachelor @ Computer Science & Telecommunications, Technological Institute of Thessaly,
-                            Greece(2005-2010)</p>
+                        <p class="content is-small">Computer Science & Telecommunications, Technological Institute of Thessaly, Greece</p>
 
                         <p class="is-text"></p>
                         <p class="is-text">Courses :</p>
@@ -289,6 +296,8 @@
                 event.preventDefault();
             });
         });
+
+
     </script>
 </body>
 </html>
