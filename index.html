@@ -71,9 +71,9 @@
     </div>
 
     <div class="navbar-end">
-        <a class="navbar-item" onclick="downloadCV()">
+        <button class="navbar-item" onclick="downloadCV()">
             Download CV
-        </a>
+        </button>
     </div>
 
 </nav>
@@ -301,7 +301,7 @@
         // jQuery for page scrolling feature - requires jQuery Easing plugin
         $(function () {
 
-            $('body').on('click', '.go-top, .navbar-item', function (event) {
+            $('body').on('click', '.go-top, a.navbar-item', function (event) {
                 var $anchor = $(this);
                 $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top - 80}, 1500, 'easeInOutExpo');
                 event.preventDefault();
@@ -309,8 +309,7 @@
         });
 
         function downloadCV(){
-            // window.location.href = "assets/files/Dimitris_Kontoulis_resume.pdf";
-            Window.open("https://kontoulis.github.io/assets/files/Dimitris_Kontoulis_resume.pdf");
+            window.location = "https://kontoulis.github.io/assets/files/Dimitris_Kontoulis_resume.pdf";
         }
     </script>
 </body>
